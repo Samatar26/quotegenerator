@@ -1,19 +1,15 @@
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", false);
-xhr.send(null);
-
-console.log(xhr.status);
-
-var json = JSON.parse(xhr.responseText);
-console.log(json);
-var famousQuote=json[0].content;
-var author = json[0].title;
-var authorHTML=document.getElementById('author');
+function changeQuote(){$(document).ready(function(){
+$.getJSON('http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?', function (response){
+  if (response.quoteAuthor === ""){
+    author.textContent="Unknown"
+  }
+else{
+  author.textContent=response.quoteAuthor;
+}  
+quoteText.innerText = response.quoteText;
 
 
-var quote = document.getElementById('quoteText');
-console.log(author);
-
-
-  quote.innerHTML=famousQuote;
-  authorHTML.textContent=author;
+});
+});
+};
+changeQuote();
