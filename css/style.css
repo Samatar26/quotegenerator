@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Inconsolata|McLaren|Muli|Oldenburg|PT+Sans|Patua+One|Roboto+Slab|Ubuntu');
+
+.flex{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height:95vh;
+  border:2px solid black;
+}
+
+#quote{
+  border:2px solid green;
+  margin-left:10%;
+  margin-right:10%;
+  font-family:McLaren;
+  margin-bottom:10%;
+  font-size:1em;
+}
+
+#flexTwo{
+  border:1px solid red;
+  margin-left:20%;
+  font-family:Bitter;
+  
+}
