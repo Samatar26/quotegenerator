@@ -1,13 +1,17 @@
-/*ml, body{
-  background: url("http://www.intrawallpaper.com/static/images/1582350.jpg");
-  background-size:cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}*/
-
 body{
   margin: 0 auto;
+}
+#backgroundImage{
+  display:flex;
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:-1;
+  top:0;
+}
+
+#backgroundImage img{
+  width:100%;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Bitter|Inconsolata|McLaren|Muli|Oldenburg|PT+Sans|Patua+One|Roboto+Slab|Ubuntu');
@@ -30,7 +34,7 @@ body{
   margin-bottom:10%;
   font-size:1em;
   height:4em;
-  color:white;
+  color:black;
 }
 
 
@@ -46,16 +50,3 @@ body{
   margin-top:50px;
 }
 
-#backgroundImage{
-  display:flex;
-  height:100%;
-  width:100%;
-  position:absolute;
-  z-index:-1;
-  top:0;
-  
-}
-
-#backgroundImage img{
-  width:100%;
-}
